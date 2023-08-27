@@ -1,5 +1,4 @@
-![Wine Quality](wine_quality.png)
-Certainly! Below is a draft for your `README.md` file:
+![Wine Quality](Wine_Quality.png)
 
 # Exploring_Wine_Quality_EDA_ML
 
