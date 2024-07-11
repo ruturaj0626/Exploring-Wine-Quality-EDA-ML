@@ -1,46 +1,77 @@
 ![Wine Quality](https://github.com/ruturaj0626/Exploring-Wine-Quality-EDA-ML/blob/main/stuff/Wine_Quality2.png)
 
-# Exploring_Wine_Quality_EDA_ML
+# Exploring Wine Quality: EDA and Machine Learning
+
+This repository contains code and data for exploring wine quality through exploratory data analysis (EDA) and machine learning (ML) techniques.
 
 ## Overview
 
-Welcome to the **Exploring_Wine_Quality_EDA_ML** repository, where we embark on a fascinating journey into the world of wine quality analysis using Exploratory Data Analysis (EDA) and Machine Learning (ML). This repository serves as a comprehensive resource for uncovering insights, predicting quality, and understanding the nuances that define exceptional wines.
+This project aims to analyze and predict wine quality based on various chemical properties using machine learning models. The main steps involved include data preprocessing, model training, evaluation using regression metrics, and visualization of results.
 
-## Contents
+## Project Structure
 
-- `notebooks/`: This directory contains a collection of Jupyter notebooks that walk through the process of EDA and ML analysis on wine quality datasets.
-- `models/`: Here, you'll find Machine Learning models that predict and classify wine quality based on various attributes.
-- `visualizations/`: A showcase of captivating visualizations that bring to life the intricate characteristics of wines and their impact on overall quality.
+The project is structured as follows:
 
-## Usage
+```
+project/
+│
+├── data/
+│   └── winequality-red.csv               # Dataset file (not part of this project)
+│
+├── data_processing.py             # Module for data preprocessing
+├── hyperparameters.py             # Module defining hyperparameters for models
+├── modeling.py                    # Module for training machine learning models
+├── metrics.py                     # Module containing evaluation metrics
+├── visualization.py               # Module for visualizing results
+└── main_script.py                 # Main script to run the entire pipeline
+```
 
-1. Clone this repository to your local machine using:
-   ```bash
-   git clone https://github.com/ruturaj0626/Exploring_Wine_Quality_EDA_ML.git
+## Modules
+
+- **data_processing.py**: Contains functions for preprocessing the dataset, including scaling numerical features.
+  
+- **hyperparameters.py**: Defines hyperparameters used in machine learning models, such as Random Forest regressor parameters.
+
+- **modeling.py**: Implements functions for training machine learning models, specifically a Random Forest regressor in this project.
+
+- **metrics.py**: Provides functions for evaluating the performance of machine learning models using regression metrics like Mean Squared Error (MSE) and R-squared (R2) score.
+
+- **visualization.py**: Includes functions for visualizing feature importances and predicted vs actual values using matplotlib and seaborn.
+
+- **main_script.py**: Orchestrates the entire pipeline, from loading the dataset to model evaluation and visualization.
+
+## Setup
+
+To run this project, follow these steps:
+
+1. **Clone the repository**:
+   ```
+   git clone https://github.com/your_username/exploring-wine-quality.git
+   cd exploring-wine-quality
    ```
 
-2. Explore the notebooks in the `notebooks/` directory to uncover hidden insights within wine quality data.
+2. **Install dependencies**:
+   ```
+   pip install -r requirements.txt
+   ```
 
-3. Experiment with the ML models in the `models/` directory to predict and classify wine quality.
+3. **Run the main script**:
+   ```
+   python main_script.py
+   ```
 
-4. Immerse yourself in the captivating visualizations within the `visualizations/` directory to visually grasp the nuances of wine attributes.
+## Requirements
 
-## Contribution
+- Python 3.x
+- pandas
+- scikit-learn
+- matplotlib
+- seaborn
 
-Contributions to this project are more than welcome! If you've discovered new insights, implemented enhancements, or created novel visualizations, feel free to open a pull request. Please refer to our [Contribution Guidelines](CONTRIBUTING.md) for detailed information on how to get involved.
+## Contributing
 
-## Resources
-
-Expand your understanding of EDA, ML techniques, and oenology with these helpful resources:
-
-- [DataCamp's Exploratory Data Analysis in Python](https://www.datacamp.com/courses/exploratory-data-analysis-in-python)
-- [Scikit-Learn Documentation](https://scikit-learn.org/stable/documentation.html)
-- [Wine Folly's Wine Tasting Guide](https://winefolly.com/tips/wine-tasting-guide-tasting-wine/)
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or a pull request on GitHub.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
-
-
-Uncover the magic that lies within wines, from data patterns to flavor profiles. Join us in the exploration of wine quality through EDA and ML, and raise a virtual toast to the convergence of data and flavor!
-
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
