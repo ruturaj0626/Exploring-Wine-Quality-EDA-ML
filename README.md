@@ -1,4 +1,4 @@
-![Wine Quality](Wine_Quality2.png)
+![Wine Quality](stuff\Wine_Quality2.png)
 
 # Exploring_Wine_Quality_EDA_ML
 
