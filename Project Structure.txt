@@ -1,1 +1,11 @@
-This file represents the project structure.
+project/
+│
+├── data/ 
+│   └── auto-mpg.csv
+├── src/
+│   ├── data_processing.py
+│   ├── hyperparameters.py
+│   ├── modeling.py
+│   ├── metrics.py
+│   ├── visualization.py
+│   └── main_script.py
