@@ -1,7 +1,7 @@
 project/
 │
 ├── data/ 
-│   └── auto-mpg.csv
+│   └── winequality-red.csv
 ├── src/
 │   ├── data_processing.py
 │   ├── hyperparameters.py
