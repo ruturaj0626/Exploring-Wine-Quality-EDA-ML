@@ -16,7 +16,7 @@ The project is structured as follows:
 project/
 │
 ├── data/
-│   └── winequality-red.csv               # Dataset file (not part of this project)
+│   └── winequality-red.csv                
 │
 ├── data_processing.py             # Module for data preprocessing
 ├── hyperparameters.py             # Module defining hyperparameters for models
@@ -46,7 +46,7 @@ To run this project, follow these steps:
 
 1. **Clone the repository**:
    ```
-   git clone https://github.com/your_username/exploring-wine-quality.git
+   git clone https://github.com/ruturaj0626/exploring-wine-quality.git
    cd exploring-wine-quality
    ```
 
